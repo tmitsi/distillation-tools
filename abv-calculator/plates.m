@@ -3,6 +3,7 @@ function v_percentage = plates(number,percentage,zoom)
     azeo_diagram();
     xlim([0, 98]);
     ylim([78, 100]);
+    title({'Ethanol-water mixture phase diagram',''});
     return;
   endif
   hold on;
@@ -27,18 +28,30 @@ function v_percentage = plates(number,percentage,zoom)
 
     plot([v_percentage v_percentage], [temp newtemp],'k-.','HandleVisibility','off')
   endfor
+
   plot([v_percentage v_percentage], [0 newtemp],'k-','HandleVisibility','off')
   plot(v_percentage, newtemp,'r.','MarkerSize',13, 'DisplayName',strcat('abv (%)=',num2str(v_percentage)))
 
+  % resize diagram
   low_x = 0;
-  high_y = 78;
+  high_y = 100;
   if zoom
     low_x = percentage - 2;
     high_y = tliquid(percentage/100) + 1;
   endif
-  % resize diagram
+
   xlim([low_x, 98]);
   ylim([78, high_y]);
+
+  % add diagram title
+  if number == 0
+    subtitle = "Pot Still";
+  elseif number == 1
+    subtitle = strcat(num2str(number),' theoretical plate');
+  else
+    subtitle = strcat(num2str(number),' theoretical plates');
+  endif
+  title({'Ethanol-water mixture phase diagram',subtitle});
 
 endfunction
 

@@ -10,4 +10,3 @@ no_of_plates = 5;
 # run the thing
 plates(no_of_plates, percentage_in_boiler,zoom);
 
-

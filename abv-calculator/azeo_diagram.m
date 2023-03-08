@@ -31,7 +31,7 @@ function azeo_diagram()
   xlabel('Ethanol concentration by volume (%)');
   ylabel('Temperature (°C)');
   legend('Azeotrope','Liquid phase', 'Gas phase');
-  title({'Ethanol-water mixture phase diagram',' '});
+
   x_tick=[0:2:98];
   y_tick = [75:1:100];
   set(gca,'xtick',x_tick)
