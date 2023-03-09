@@ -26,8 +26,9 @@ For example call `plates(0, 35, true)` for a pot still, 35% abv in the boiler, a
 If you want only the diagram, run the `diagram.m`, or call the fuction plates without arguments, i.e. `plates()`
 
 ## Screenshots
-![screenshot1](https://user-images.githubusercontent.com/34687500/223664154-abe19ec5-777b-4fa9-82e0-0d6f92d8111c.png)
-![screenshot2](https://user-images.githubusercontent.com/34687500/223664182-100b1a36-16df-4bd8-8398-a9667a500906.png)
+![screenshot1](https://user-images.githubusercontent.com/34687500/224176604-e8c76a12-c8a5-430b-8470-ed862a463f18.png)
+![screenshot2](https://user-images.githubusercontent.com/34687500/223664154-abe19ec5-777b-4fa9-82e0-0d6f92d8111c.png)
+![screenshot3](https://user-images.githubusercontent.com/34687500/223664182-100b1a36-16df-4bd8-8398-a9667a500906.png)
 
 ## Credits
 All calculations are based on material found in https://homedistiller.org/wiki/htm/calcs/calcs_calc.htm
